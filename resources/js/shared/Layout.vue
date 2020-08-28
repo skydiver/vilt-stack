@@ -1,7 +1,9 @@
 <template>
-  <main>
+  <div
+    class="w-screen h-screen flex flex-col items-center justify-center text-gray-900"
+  >
     <slot />
-  </main>
+  </div>
 </template>
 
 <script>

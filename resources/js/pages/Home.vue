@@ -1,7 +1,9 @@
 <template>
   <layout>
-    <h1 class="text-2xl font-semibold mb-3">Welcome</h1>
-    <p>Welcome to my first Inertia.js app!</p>
+    <h1 class="mb-3 text-5xl font-semibold">VILT Stack</h1>
+    <p class="text-blue-900 font-semibold">
+      Vue.js + Inertia.js + Laravel + Tailwind CSS
+    </p>
   </layout>
 </template>
 
