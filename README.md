@@ -7,7 +7,7 @@
 * Inertia.js
 * Tailwind CSS + Tailwind UI
 * ESLint + Prettier
-* Browsersync ready
+* "Hot Module Replacement" ready
 
 ## Install
 1. clone repo
@@ -18,7 +18,7 @@
 
 ## Development
 1. `npm run dev`
-2. open http://localhost:3000/
+2. open http://localhost:8000/
 
 ## Notes
 * Home component located at: `resources/js/pages/Home.vue`

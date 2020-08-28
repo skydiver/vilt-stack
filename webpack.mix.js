@@ -24,11 +24,4 @@ mix
 
 mix.copy('resources/assets/images', 'public/images', false);
 
-mix.browserSync({
-  ui: false,
-  injectChanges: true,
-  notify: false,
-  proxy: '127.0.0.1:8000'
-});
-
 mix.version();
