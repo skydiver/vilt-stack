@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Layout from '@/Shared/Layout';
+import Layout from '~/shared/Layout';
 
 export default {
   components: {
