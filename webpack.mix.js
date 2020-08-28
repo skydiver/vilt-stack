@@ -22,6 +22,8 @@ mix
     plugins: ['@babel/plugin-syntax-dynamic-import']
   });
 
+mix.copy('resources/assets/images', 'public/images', false);
+
 mix.browserSync({
   ui: false,
   injectChanges: true,
