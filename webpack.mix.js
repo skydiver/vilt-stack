@@ -1,18 +1,27 @@
-const mix = require('laravel-mix')
-const path = require('path')
+const mix = require('laravel-mix');
+const path = require('path');
 
-mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css')
-   .webpackConfig({
-     output: { chunkFilename: 'js/[name].js?id=[chunkhash]' },
-     resolve: {
-       alias: {
-         'vue$': 'vue/dist/vue.runtime.esm.js',
-         '@': path.resolve('resources/js'),
-       },
-     },
-   })
-   .babelConfig({
-       plugins: ['@babel/plugin-syntax-dynamic-import']
-   })
-   .version()
+mix
+  .js('resources/js/app.js', 'public/js')
+  .sass('resources/sass/app.scss', 'public/css')
+  .webpackConfig({
+    output: { chunkFilename: 'js/[name].js?id=[chunkhash]' },
+    resolve: {
+      alias: {
+        vue$: 'vue/dist/vue.runtime.esm.js',
+        '@': path.resolve('resources/js')
+      }
+    }
+  })
+  .babelConfig({
+    plugins: ['@babel/plugin-syntax-dynamic-import']
+  });
+
+mix.browserSync({
+  ui: false,
+  injectChanges: true,
+  notify: false,
+  proxy: '127.0.0.1:8000'
+});
+
+mix.version();
